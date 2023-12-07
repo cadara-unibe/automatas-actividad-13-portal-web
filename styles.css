@@ -8,14 +8,44 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
 header .banner {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+}
+
+.title-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.title-section h1 {
+    margin: 0;
+    color: #ffcc00; /* Adjust the color to match the banner */
+    font-size: 2.5em;
+}
+
+.title-section h2 {
+    margin: 5px 0;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.title-section p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.course-details {
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .card-container {
@@ -34,44 +64,44 @@ header .banner {
     text-align: center;
     text-decoration: none;
     color: #333;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 2px 5px
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.card h2 {
-    margin: 0;
-    padding: 16px 0;
-    background-color: #0056b3;
-    color: white;
-    border-bottom: 1px solid #ddd;
-}
-
-.card p {
-    padding: 0 20px 20px;
-}
-
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding-bottom: 40px; /* extra padding to ensure footer does not overlap content */
-}
-
-article {
-    margin-bottom: 20px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
+.scroll-down-button-container {
     text-align: center;
-    padding: 10px 0;
-    position: relative; /* changed from absolute to relative */
-    width: 100%;
-    bottom: 0;
-    clear: both; /* added to ensure footer is below all content */
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+.scroll-down-button {
+    background-color: #0056b3; /* Adjust background color as needed */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    outline: none; /* Removes the outline to make it look better */
+}
+
+.scroll-down-button:hover {
+    background-color: #003d82; /* Darker shade for hover effect */
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.scroll-down-button {
+    /* ... (rest of the .scroll-down-button styles) */
+    animation: bounce 2s infinite;
 }
