@@ -1,8 +1,9 @@
-body {
-    font-family: 'Arial', sans-serif;
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
     background: #f4f4f4;
+    color: #333;
 }
 
 header {
@@ -105,3 +106,94 @@ header .banner {
     /* ... (rest of the .scroll-down-button styles) */
     animation: bounce 2s infinite;
 }
+
+/* General content container */
+.content-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: #e74c3c; /* dark red */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* CTA Section styles */
+.cta-section {
+    background: #ffa500; /* orange background */
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px; /* space between text and CTA section */
+}
+
+.cta-section h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    background-color: #e74c3c; /* dark red */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block; /* for proper spacing */
+    margin: 0 auto; /* horizontally center the button */
+}
+
+.cta-button:hover {
+    background-color: #c0392b; /* darker red */
+}
+
+/* Social media styles */
+.social-media {
+    position: absolute;
+    right: 0;
+    top: 50px; /* adjust as needed */
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #e74c3c; /* dark red */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; /* space between sections and footer */
+    background: #333;
+    color: #fff;
+}
+
+/* Add any additional styles you need here */
+
